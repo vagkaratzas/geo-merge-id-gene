@@ -8,7 +8,7 @@ The third input arguement is an integer, showing the number of the column that c
 2. unzipped platform annotation, "#" for comments
 3. integer showing the column of the platform data which contains the gene symbols
 
-Make sure Rscript is in the PATH environment variable.
+Make sure Rscript is in the PATH environment variable and you have your input files in the current directory.
 
 Example:
 Rscript geo-merge-id-gene.R "GSE71351_series_matrix.txt" "GPL10558-50081.txt" 6
