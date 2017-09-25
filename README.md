@@ -7,3 +7,8 @@ The third input arguement is an integer, showing the number of the column that c
 1. unzipped series matrix, "!" for comments
 2. unzipped platform annotation, "#" for comments
 3. integer showing the column of the platform data which contains the gene symbols
+
+Make sure Rscript is in the PATH environment variable.
+
+Example:
+Rscript geo-merge-id-gene.R "GSE71351_series_matrix.txt" "GPL10558-50081.txt" 6
