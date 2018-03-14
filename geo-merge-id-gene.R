@@ -24,5 +24,5 @@ annotation <- read.csv(args[2], sep = "\t", header = TRUE, comment.char = "#", b
 gene_symbol_col <- as.integer(args[3]) #as.integer needed
 annotation <- annotation[,c(1,gene_symbol_col)] #keep only ID and gene symbols
 colnames(annotation)[1] <- "ID" #to merge with series matrix, need same name
-gene_series <- merge(annotation, series_matrix) #merge
+gene_series <- merge(series_matrix, annotation) #merge
 write.table(gene_series, "gene_series_output.csv", row.names=FALSE, col.names=TRUE, sep=",")
